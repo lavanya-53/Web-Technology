@@ -1,0 +1,264 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lavanya Y - Resume</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #263445;
+            background-color: #f4f7fb;
+            margin: 25px;
+            line-height: 1.5;
+        }
+
+        .resume {
+            max-width: 900px;
+            margin: auto;
+            background-color: white;
+            padding: 30px 40px;
+            border-top: 6px solid #24476b;
+            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        header {
+            text-align: center;
+            border-bottom: 2px solid #24476b;
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: #24476b;
+            margin-bottom: 8px;
+            font-size: 32px;
+        }
+
+        .contact {
+            font-size: 13px;
+            margin: 0;
+        }
+
+        .contact a {
+            color: #356c9b;
+            text-decoration: none;
+        }
+
+        .contact span {
+            color: #a0adbb;
+            padding: 0 8px;
+        }
+
+        section {
+            margin-bottom: 20px;
+            padding-bottom: 14px;
+            border-bottom: 1px solid #cbd8e5;
+        }
+
+        h2 {
+            color: #24476b;
+            font-size: 19px;
+            border-left: 5px solid #6c9bc3;
+            padding: 5px 0 5px 10px;
+            background-color: #edf4fa;
+            margin-bottom: 12px;
+        }
+
+        h3 {
+            color: #315d80;
+            font-size: 15px;
+            margin-bottom: 3px;
+        }
+
+        p {
+            margin: 5px 0;
+            font-size: 13px;
+        }
+
+        ul {
+            margin-top: 5px;
+            padding-left: 22px;
+        }
+
+        li {
+            font-size: 13px;
+            margin-bottom: 5px;
+        }
+
+        .skills {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0;
+        }
+
+        .skill {
+            padding: 9px 12px;
+            border-bottom: 1px solid #e0e8f0;
+        }
+
+        .skill:nth-child(odd) {
+            border-right: 2px solid #d4e1ed;
+        }
+
+        .skill strong {
+            color: #315d80;
+        }
+
+        .project {
+            border-left: 2px solid #d4e1ed;
+            padding-left: 14px;
+            margin-bottom: 17px;
+        }
+
+        .project ul {
+            margin-bottom: 0;
+        }
+
+        .date {
+            color: #617386;
+        }
+
+        @media print {
+            body {
+                background: white;
+                margin: 0;
+            }
+
+            .resume {
+                box-shadow: none;
+                border-top: 5px solid #24476b;
+                padding: 20px;
+            }
+
+            a {
+                color: #24476b;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="resume">
+
+    <header>
+        <h1>Lavanya Y</h1>
+
+        <p class="contact">
+            9148099021
+            <span>|</span>
+            <a href="mailto:Lavanyay796@gmail.com">Lavanyay796@gmail.com</a>
+            <span>|</span>
+            <a href="https://www.linkedin.com/in/lavanya-y-959543329"
+               target="_blank">LinkedIn</a>
+            <span>|</span>
+            <a href="https://github.com/lavanya-53"
+               target="_blank">GitHub</a>
+            <span>|</span>
+            <a href="https://leetcode.com/u/lavanyaygowda/"
+               target="_blank">LeetCode</a>
+        </p>
+    </header>
+
+    <section>
+        <h2>Technical Skills</h2>
+
+        <div class="skills">
+            <div class="skill">
+                <strong>Languages:</strong> Java, Python, C
+            </div>
+
+            <div class="skill">
+                <strong>Frontend:</strong> JavaScript, HTML, CSS, React.js
+            </div>
+
+            <div class="skill">
+                <strong>Backend:</strong> Java, Spring MVC, Spring Boot,
+                REST APIs, Hibernate ORM
+            </div>
+
+            <div class="skill">
+                <strong>Cloud &amp; DevOps:</strong> Git, GitHub, Docker, AWS
+            </div>
+
+            <div class="skill">
+                <strong>Databases:</strong> MySQL, PostgreSQL
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Personal Projects</h2>
+
+        <div class="project">
+            <h3>Apartment Visitor &amp; Security Management System</h3>
+            <p><strong>Technologies:</strong> Python, MySQL</p>
+            <ul>
+                <li>Developed a database-driven system to manage apartment residents, visitors, visitor passes, vehicles, deliveries and entry/exit records.</li>
+                <li>Designed a relational database with multiple tables using Primary Keys and Foreign Keys.</li>
+                <li>Implemented triggers and stored procedures to automate database operations and generate reports.</li>
+                <li>Implemented features for resident management, visitor tracking, security guard management, blacklist management and entry logs.</li>
+            </ul>
+        </div>
+
+        <div class="project">
+            <h3>Scalable Time Application on AWS</h3>
+            <p><strong>Technologies:</strong> Spring Boot, AWS EC2, ALB, Auto Scaling</p>
+            <ul>
+                <li>Built and deployed a distributed Spring Boot application on AWS using multiple EC2 instances and an Application Load Balancer.</li>
+                <li>Configured health checks and traffic routing, ensuring requests were served only by healthy application instances.</li>
+                <li>Implemented Auto Scaling Groups to dynamically manage server capacity based on CPU load.</li>
+                <li>Gained hands-on experience with scalability, load balancing, high availability and fault tolerance.</li>
+            </ul>
+        </div>
+
+        <div class="project">
+            <h3>NutriCart - Smart Grocery &amp; Nutrition Mobile App</h3>
+            <p><strong>Technologies:</strong> Flutter, Dart</p>
+            <ul>
+                <li>Developed a Flutter mobile application for personalized meal planning, grocery recommendations and nutrition management.</li>
+                <li>Implemented diabetes- and hypertension-conscious meal filtering, calorie and budget-based recommendations, and healthier alternatives to familiar Indian meals.</li>
+                <li>Added English, Hindi and Kannada localization with reusable UI components and optimized image handling using SVG and cached network images.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Education</h2>
+
+        <h3>Bangalore Institute of Technology</h3>
+        <p>Bachelor of Engineering (B.E.) - Computer Science and Engineering</p>
+        <p class="date">August 2024 - July 2028 | CGPA: 9.55/10</p>
+
+        <h3>PES PU College</h3>
+        <p>Pre-University Course (PCMCs)</p>
+        <p class="date">May 2022 - April 2024 | Percentage: 93.33%</p>
+
+        <h3>Athena Public School</h3>
+        <p>10th Standard</p>
+        <p class="date">April 2022 | Percentage: 99%</p>
+    </section>
+
+    <section>
+        <h2>Certifications</h2>
+        <ul>
+            <li>Google Cloud Data Analytics - Google Cloud | November 2025</li>
+            <li>AWS Certified Solutions Architect Associate - Udemy | July 2026</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Achievements</h2>
+        <ul>
+            <li>Finalist - Top 45 out of 1000+ teams, Anveshana National Level Science and Engineering Fair 2026</li>
+            <li>Recipient of the <strong>Outstanding Presentation Award</strong></li>
+            <li>Project Presented: <strong>NutriCart - Smart Grocery &amp; Nutrition Mobile Application</strong></li>
+        </ul>
+    </section>
+
+</div>
+
+</body>
+</html>
+```
